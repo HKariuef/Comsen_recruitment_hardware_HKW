@@ -2,7 +2,7 @@
 set -euo pipefail
 
 project_dir="$(cd -- "$(dirname -- "${BASH_SOURCE[0]}")" && pwd -P)"
-toolchain_dir="${ARM_GNU_TOOLCHAIN_HOME:-${project_dir}/../Comsen_recruitment_hardware/toolchain}"
+toolchain_dir="${ARM_GNU_TOOLCHAIN_HOME:-${project_dir}/../toolchain}"
 build_type="${1:-Debug}"
 
 case "${build_type}" in

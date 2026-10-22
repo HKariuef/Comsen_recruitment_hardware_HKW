@@ -59,7 +59,9 @@ SHIFT BACK MODE ↑    OK
 
 ## 编译
 
-在 WSL/Linux 中执行：
+先按仓库根目录 README.md 的说明安装工具链到仓库根目录的 toolchain/，并完成 setup.sh 初始化。build.sh 默认使用 ../toolchain/；若复用其他位置的工具链，请将 ARM_GNU_TOOLCHAIN_HOME 环境变量设为包含 env.sh 的工具链目录。
+
+在 WSL/Linux 的仓库根目录执行：
 
 ```bash
 cd HCalculate
